@@ -1,0 +1,31 @@
+.about {
+    max-width: 1023px;
+    margin: auto;
+    color: var(--white);
+}
+
+.about-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.about-title {
+    padding: 10px;
+}
+
+.about-describe {
+    background: var(--bg);
+    color: var(--primary);
+    padding: 20px 10px;
+}
+
+.none {
+    display: none;
+}
+
+.bg {
+    background-color: black;
+}

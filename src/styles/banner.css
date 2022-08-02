@@ -1,0 +1,26 @@
+.banner-home {
+    height: 223px;
+    border-radius: 25px;
+    background: url(/public/img/accueil.webp) no-repeat;  
+    background-size: cover;
+    background-position: 25% 75%;
+}
+
+.banner-about {
+    height: 223px;
+    border-radius: 25px;
+    background: url(/public/img/a_propos.jpg) no-repeat;  
+    background-size: cover;
+    background-position: 25% 75%;
+}
+
+.banner-text {
+    color: var(--white);
+    text-align: center;
+    line-height: 211px;
+}
+
+.banner-accommodation {
+    height: 415px;
+    border-radius: 25px;
+}

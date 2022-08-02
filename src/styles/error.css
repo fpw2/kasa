@@ -1,0 +1,18 @@
+.error {
+    color: var(--primary);
+    text-align: center;
+}
+
+.error-title {
+    font-size: 288px;
+    margin: 0;
+}
+
+.error-redirection {
+    margin-top: 20vh;
+    text-decoration: underline;
+}
+
+.error-redirection > a {
+    color: var(--primary);
+}

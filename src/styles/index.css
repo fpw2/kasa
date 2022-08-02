@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary: #FF6060 ;
+    --white: #FFFFFF;
+    --bg: #F7F7F7;
+    --bg_footer: black;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+
+a { 
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
