@@ -1,15 +1,26 @@
 import * as React from "react";
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import "../styles/header.css"
 import Logo from "./Logo"
 
 export default function Header() {
+    let activeStyle = {
+        textDecoration: "underline",
+      };
+
     return (
     <div className="header">
         <Logo />
         <nav className="nav">
-            <Link to="/">Accueil</Link>
-            <Link to="/about">A propos</Link>
+            <NavLink 
+                to="/" 
+                style={({ isActive }) => isActive ? activeStyle : undefined}>
+                Accueil
+            </NavLink> 
+            <NavLink 
+                to="/about">
+                A propos
+            </NavLink>
         </nav>
     </div>
     )

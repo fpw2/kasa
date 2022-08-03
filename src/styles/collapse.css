@@ -17,6 +17,7 @@
     border-radius: 5px;
     align-items: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .collapse:not(.none) .fa-chevron-down {

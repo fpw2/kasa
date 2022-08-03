@@ -6,11 +6,13 @@ import Collapse from "../components/Collapse"
 
 export default function About() {
 
-    return (<>
-        <Banner type="about" />
-        <div className="about">
-            {aboutList.map(about => { return <Collapse title={about.title}  describe={about.describe} />})}
+    return (
+    <div className="about">
+        <Banner background="about" text="no-text" height="height" />
+        <div className="about-content">
+            {aboutList.map(about => { return <Collapse title={about.title} describe={about.describe} />})}
         </div>
         <Footer />
-    </>)
+    </div>
+    )
 }

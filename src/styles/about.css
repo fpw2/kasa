@@ -1,10 +1,17 @@
 .about {
+    align-items: flex-end;
+}
+
+.about-content {
     width: 80%;
     margin: auto;
     color: var(--white);
 }
 
-
 .bg {
     background-color: black;
+}
+
+.no-text {
+    display: none;
 }

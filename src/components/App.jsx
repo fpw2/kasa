@@ -5,7 +5,7 @@ import Home from '../pages/Home';
 import About from '../pages/About';
 import Error from '../pages/Error';
 import Container from './Container';
-import AccommodationSheet from '../pages/AccommodationSheet';
+import LodgingSheet from '../pages/LodgingSheet';
 
 export default function App() {
   return(
@@ -13,10 +13,10 @@ export default function App() {
         <BrowserRouter>
           <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} /> {/* doit correspondre à mon link et m'enverra sur <Home />*/}
             <Route path="/about" element={<About />} />
-            <Route path="/lodging/:id" element={<AccommodationSheet />} />
-            <Route path="*" element={<Error />} />
+            <Route path="/lodging/:id" element={<LodgingSheet />} />
+            <Route path="*" element={<Error />} /> 
           </Routes>
         </BrowserRouter>
       </Container>

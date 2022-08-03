@@ -1,13 +1,13 @@
 import "../styles/home.css"
 import Footer from "../components/Footer"
 import Banner from "../components/Banner"
-import CardsLodging from "../components/CardsLodging"
+import LodgingCards from "../components/LodgingCards"
 
 export default function Home() {
     return (
     <div>
-        <Banner type="home" />
-        <CardsLodging />
+        <Banner background="home" />
+        <LodgingCards />
         <Footer />
     </div>
     )
