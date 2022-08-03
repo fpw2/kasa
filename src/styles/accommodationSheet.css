@@ -21,7 +21,16 @@
 
 .header-profil {
     display: flex;
+    justify-content: flex-end;
     height: 50%;
+}
+
+.header-profil > h4{
+   width: 70px;
+}
+
+.header-profil > img {
+    border-radius: 50%;
 }
 
 
@@ -44,6 +53,11 @@
     padding: 5px 50px;
     margin: 20px 0px;
     display: block;
+}
+
+.content {
+    gap: 60px;
+    height: 100%;
 }
 
 .content, .content-block {

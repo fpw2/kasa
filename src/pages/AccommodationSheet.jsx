@@ -12,8 +12,7 @@ export default function AccommodationSheet() {
     useEffect(() => {
         let lodging = lodgingList.find(item => item.id === id);
         setLocation(lodging)
-    }, [id])   
-
+    }, [id]) // lodgingList  
 
     return (<>
         <div className="banner-accommodation">
@@ -27,8 +26,10 @@ export default function AccommodationSheet() {
             </div>
             <div>
                 <div className="header-profil">
-                    <h4>p</h4>
-                    <img className="rounded" alt="profile"/>
+                    <h4>
+                        {location.host.name}
+                    </h4>
+                    <img src= {location.host.picture} alt="profile"/>
                 </div>
                 <div className="header-rating">Rating</div>
             </div>
