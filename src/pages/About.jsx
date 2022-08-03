@@ -1,5 +1,4 @@
 import "../styles/about.css"
-import Footer from "../components/Footer"
 import Banner from "../components/Banner"
 import {aboutList} from "../datas/aboutList.js"
 import Collapse from "../components/Collapse"
@@ -12,7 +11,6 @@ export default function About() {
         <div className="about-content">
             {aboutList.map(about => { return <Collapse title={about.title} describe={about.describe} />})}
         </div>
-        <Footer />
     </div>
     )
 }

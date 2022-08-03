@@ -2,21 +2,22 @@ import "../styles/banner.css"
 import "../styles/lodgingSheet.css"
 import { useParams } from "react-router-dom"
 import { lodgingList } from "../datas/lodgingList"
-import { useEffect, useState } from "react"
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Footer from "../components/Footer"
-
 export default function LodgingSheet() {
     let {id} = useParams() // Get the id param from the URL {id: "lodgingList.id"} from LodgingCards
-    console.log(id)
-    const [lodging, setLodging] = useState({})
 
-    useEffect(() => {
-        let lodgingId = lodgingList.find(lodging => lodging.id === id);
-        setLodging(lodgingId)
-    }, [lodgingList]) // lodgingList 
+    const lodging = lodgingList.find(lodging => lodging.id === id)
+
+    const tags = lodging.tags.map(tag => <span className="tag primary-white">{tag}</span>)
+    console.log(tags)
+
+    
+    const fullName = lodging.host.name.split(" ")
+    const firstName = fullName[0]
+    const lastName = fullName[1]
+
     
     // RATING
     const totalRating = Number(lodging.rating)
@@ -24,11 +25,6 @@ export default function LodgingSheet() {
     const star = <FontAwesomeIcon icon={faStar} style={{ color: "var(--primary)" }}/>
     const greyStar = <FontAwesomeIcon icon={faStar} style={{ color: "grey" }}/>
     const rating = range.map(rangeElt => { return totalRating >= rangeElt ? star : greyStar})
-
-    // console.log(lodging.host.children)
-        
-        
-    
 
     return (
     <div>
@@ -38,17 +34,18 @@ export default function LodgingSheet() {
         <div className="header-lodging">
             <div className="header-title">
                 <h2 className="primary">{lodging.title}</h2>
-                <h4 className="primary">{lodging.lodging}</h4>
-                <div>
-                    <span className="tag primary-white"></span>
+                <h4 className="primary">{lodging.location}</h4>
+                <div className="header-tags">
+                    {tags}
                 </div>
             </div>
             <div>
                 <div className="header-profil">
                     <h4>
-                      
+                      <span>{firstName}</span>
+                      <span>{lastName}</span>
                     </h4>
-                    <img  alt="profile"/>
+                    <img src={lodging.host.picture} alt="profile"/>
                 </div>
                 <div className="header-rating">
                     <p className="rating">{rating}</p>
@@ -72,7 +69,6 @@ export default function LodgingSheet() {
                 <h4 className="content-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus tenetur est, quis cupiditate ex earum velit ea ab recusandae nihil? Vel itaque adipisci eos natus tenetur dolorum nulla dignissimos similique.</h4>      
             </div> 
         </div> 
-        <Footer />
     </div>
     )
 }

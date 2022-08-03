@@ -19,6 +19,17 @@
     padding-top: 10px;
 }
 
+.header-tags {
+    display: flex;
+}
+
+.tag {
+    padding: 5px 30px;
+    margin: 20px 20px 0px 0px;
+    display: block;
+
+}
+
 .header-profil {
     display: flex;
     justify-content: flex-end;
@@ -26,7 +37,10 @@
 }
 
 .header-profil > h4{
-   width: 70px;
+   display: flex;
+   flex-direction: column;
+   margin-right: 10px;
+   align-self: center;
 }
 
 .header-profil > img {
@@ -40,7 +54,12 @@
 
 .rating {
     position: absolute;
+    top: 20px;
     right: 0;
+}
+
+.rating > * {
+    padding-left: 10px;
 }
 
 .primary {
@@ -51,12 +70,6 @@
     background-color: var(--primary);
     color: var(--white);
     border-radius: 10px;
-}
-
-.tag {
-    padding: 5px 50px;
-    margin: 20px 0px;
-    display: block;
 }
 
 .content {
@@ -82,4 +95,6 @@
     color: var(--primary);
     padding: 10px 15px;
     border-radius: 0 0 10px 10px;
+    height: 150px;
+    overflow: hidden;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './Header';
+import Footer from './Footer';
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Error from '../pages/Error';
@@ -18,6 +19,7 @@ export default function App() {
             <Route path="/lodging/:id" element={<LodgingSheet />} />
             <Route path="*" element={<Error />} /> 
           </Routes>
+          <Footer />
         </BrowserRouter>
       </Container>
   );
