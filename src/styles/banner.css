@@ -17,10 +17,7 @@
 .banner-text {
     color: var(--white);
     text-align: center;
+
     line-height: 211px;
 }
 
-.banner-accommodation {
-    height: 415px;
-    border-radius: 25px;
-}

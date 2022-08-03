@@ -1,0 +1,32 @@
+.describe {
+    background: var(--bg) !important;
+    color: var(--primary);
+    padding: 20px 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+.collapse.none .describe {
+    display: none;
+}
+
+.block {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary);
+    margin-top: 20px;
+    border-radius: 5px;
+    align-items: center;
+    padding: 10px;
+}
+
+.collapse:not(.none) .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
+.fa-chevron-down {
+    transition: transform .5s;
+}
+
+.transition {
+    transition: transform 1s;
+}

@@ -6,7 +6,7 @@ import CardsLodging from "../components/CardsLodging"
 export default function Home() {
     return (
     <div>
-        <Banner />
+        <Banner type="home" />
         <CardsLodging />
         <Footer />
     </div>

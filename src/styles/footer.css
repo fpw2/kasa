@@ -1,8 +1,9 @@
 .footer {
     color: var(--white);
-    background-color: var(--bg_footer);
+    background-color: var(--bg-footer);
     text-align: center;
     padding: 40px 0;
+    margin-top: 20px;
 }
 
 .copyright {
