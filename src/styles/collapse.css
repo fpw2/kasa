@@ -31,3 +31,10 @@
 .transition {
     transition: transform 1s;
 }
+
+@media screen and (max-width: 767px ) {
+    .block>svg {
+        margin-right: -60px;
+    }
+    
+}

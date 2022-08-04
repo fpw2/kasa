@@ -18,3 +18,11 @@
     text-decoration: underline;
 }
 
+
+@media screen and (max-width: 767px) {
+    .nav>a {
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-left: 15px;
+    }
+}

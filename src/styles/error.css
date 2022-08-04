@@ -9,10 +9,20 @@
 }
 
 .error-redirection {
-    margin-top: 20vh;
+    margin-top: 20%;
     text-decoration: underline;
 }
 
 .error-redirection > a {
     color: var(--primary);
+}
+
+@media screen and (max-width: 767px ) {
+    .error-title {
+        font-size: 96px;
+    }
+
+    .error>h4>a {
+        font-size: 14px;
+    }
 }

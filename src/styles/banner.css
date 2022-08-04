@@ -17,7 +17,19 @@
 .banner-text {
     color: var(--white);
     text-align: center;
-
-    line-height: 211px;
+    line-height: 223px;
 }
 
+@media screen and (max-width: 767px) {
+    .banner-home {
+        height: 111px;
+        word-wrap: break-word;
+    }
+    
+    .banner-text {
+        line-height: 30px;
+        padding: 25px 10px 10px 20px;
+        text-align: unset;
+        width: 220px;
+    }
+}

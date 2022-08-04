@@ -28,3 +28,20 @@
     left: 10px;
     color: var(--white);
 }
+
+@media screen and (max-width: 992px) {
+    .lodging {
+        grid-template-columns: repeat(2,1fr)
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .lodging {
+        grid-template-columns: 1fr
+    }
+
+    .lodging-card {
+        height: 255px;
+    }
+}
