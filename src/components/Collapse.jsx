@@ -8,13 +8,13 @@ export default function Collapse({title, describe, isOpen = false}) {
     const[open, setOpen] = useState({isOpen})
     useEffect(() => { setOpen(isOpen)}, [isOpen])
 
-    function changeState() {
+    function handleDescribeClick() {
         setOpen(!open)
     }
 
     return (
     <div className={`collapse ${open ? "" : "none"}`}>
-        <div className="block" onClick={changeState}>
+        <div className="block" onClick={handleDescribeClick}>
             <h3 className="title">{title}</h3>
             <FontAwesomeIcon icon={faChevronDown} />
         </div> 

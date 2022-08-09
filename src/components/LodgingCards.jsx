@@ -8,7 +8,7 @@ export default function LodgingCards() {
             {lodgingList.map(lodging => {
             return (
                 <Link to={`/lodging/${lodging.id}`}> {/* je passe dans mon url l'id */}
-                    <div key={lodging.id} className="lodging-card" >
+                    <div className="lodging-card" >
                         <img src={lodging.cover} className="lodging-cover" alt={lodging.cover} />
                         <p className="lodging-title">{lodging.title}</p>
                     </div>
