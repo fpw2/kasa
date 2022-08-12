@@ -62,7 +62,7 @@ export default function LodgingSheet() {
                     <h4 className="content-title">Equipements</h4>
                     <FontAwesomeIcon icon={faChevronDown} />
                 </div>
-                {isEquipment && <h4  className="content-text">{lodging.equipments.map(equipment => <li>{equipment}</li>)}</h4>}   
+                {isEquipment && <h4  className="content-text">{lodging.equipments.map(equipment => <li key={equipment}>{equipment}</li>)}</h4>}   
             </div> 
         </div> 
     </div>

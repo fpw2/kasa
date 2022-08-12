@@ -123,6 +123,7 @@
 }
 
 .content-text {
+    height: 100%;
     background: var(--bg);
     color: var(--primary);
     padding: 20px 15px;
