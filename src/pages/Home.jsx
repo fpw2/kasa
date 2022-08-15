@@ -1,12 +1,12 @@
-import "../styles/home.css"
-import Banner from "../components/Banner"
-import LodgingCards from "../components/LodgingCards"
+import "../styles/home.css";
+import Banner from "../components/Banner";
+import LodgingCards from "../components/LodgingCards";
 
 export default function Home() {
-    return (
+  return (
     <div>
-        <Banner background="home" />
-        <LodgingCards />
+      <Banner background="home" />
+      <LodgingCards />
     </div>
-    )
-} 
+  );
+}
