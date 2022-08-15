@@ -16,9 +16,8 @@ export default function LodgingSheet() {
 
   let { id } = useParams(); // Get the id param from the URL {id: "lodgingList.id"} from LodgingCards
   const lodging = lodgingList.find((lodging) => lodging.id === id); // je recupere les donnees de l'id en question
-  console.log(lodging)
   if(!lodging){
-        return <Navigate to="/error" />
+    return <Navigate to="/error" />
   }
 
   return (
