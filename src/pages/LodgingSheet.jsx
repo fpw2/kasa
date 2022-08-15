@@ -1,7 +1,7 @@
 import "../styles/banner.css";
 import "../styles/lodgingSheet.css";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import { lodgingList } from "../datas/lodgingList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
@@ -16,6 +16,10 @@ export default function LodgingSheet() {
 
   let { id } = useParams(); // Get the id param from the URL {id: "lodgingList.id"} from LodgingCards
   const lodging = lodgingList.find((lodging) => lodging.id === id); // je recupere les donnees de l'id en question
+  console.log(lodging)
+  if(!lodging){
+        return <Navigate to="/error" />
+  }
 
   return (
     <div>
