@@ -1,19 +1,18 @@
 import "../styles/collapse.css"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
-export default function Collapse({title, describe, isOpen = false}) {
-    const[open, setOpen] = useState({isOpen})
-    useEffect(() => { setOpen(isOpen)}, [isOpen])
+export default function Collapse({title, describe}) {
+    const[isOpen, setIsOpen] = useState(false)
 
     function handleDescribeClick() {
-        setOpen(!open)
+        setIsOpen(!isOpen)
     }
 
     return (
-    <div className={`collapse ${open ? "" : "none"}`}>
+    <div className={`collapse ${isOpen ? "" : "none"}`}>
         <div className="block" onClick={handleDescribeClick}>
             <h3 className="title">{title}</h3>
             <FontAwesomeIcon icon={faChevronDown} />

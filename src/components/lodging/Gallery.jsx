@@ -29,11 +29,11 @@ export default function Gallery({images, cover}) {
 
     return (<>
         <div onClick={handlePrevImgClick} className="arrow-left">
-            <FontAwesomeIcon icon={faChevronLeft} size="4x" />
+            {images.length > 1 && <FontAwesomeIcon icon={faChevronLeft} size="4x" />}
         </div>
         <img className="cover-picture" src={cover} alt="cover" />
         <div onClick={handleNextImgClick} className="arrow-right">
-            <FontAwesomeIcon icon={faChevronRight} size="4x" />
+            {images.length > 1 && <FontAwesomeIcon icon={faChevronRight} size="4x" />}
         </div>
     </>)
 

@@ -50,6 +50,7 @@ export default function LodgingSheet() {
         </div>
 
         <div className="content">
+            {/* can be remplaced by collapse component */}
             <div className={`content-describe ${isDescribe ? "arrow-down" : ""}`}>
                 <div className="content-block" onClick={()=>{ setDescribe(!isDescribe)}}>
                     <h4 className="content-title">Description</h4>

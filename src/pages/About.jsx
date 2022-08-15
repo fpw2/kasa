@@ -9,7 +9,7 @@ export default function About() {
     <div className="about">
         <Banner background="about" text="no-text" height="height" />
         <div className="about-content">
-            {aboutList.map(about => { return <Collapse title={about.title} describe={about.describe} />})}
+            {aboutList.map((about,index) => { return <li key={index}><Collapse title={about.title} describe={about.describe} /></li>})}
         </div>
     </div>
     )
