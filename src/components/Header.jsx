@@ -18,7 +18,10 @@ export default function Header() {
         >
           Accueil
         </NavLink>
-        <NavLink to="/about">A propos</NavLink>
+        <NavLink to="/about"
+          style={({ isActive }) => (isActive ? activeStyle : undefined)}
+        >
+          A propos</NavLink>
       </nav>
     </div>
   );

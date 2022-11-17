@@ -14,11 +14,6 @@
     color: var(--primary);
 }
 
-.active {
-    text-decoration: underline;
-}
-
-
 @media screen and (max-width: 767px) {
     .nav>a {
         font-size: 12px;
