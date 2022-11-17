@@ -2,7 +2,7 @@
   "name": "kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fpw2.github.io",
+  "homepage": "https://fpw2.github.io/kasa",
   "dependencies": {
     "-": "^0.0.1",
     "@fontsource/montserrat": "^4.5.11",
