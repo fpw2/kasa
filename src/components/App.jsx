@@ -23,8 +23,8 @@ export default function App() {
         <GlobalStyle />
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />{" "}
           {/* doit correspondre à mon link et m'enverra sur <Home />*/}
+          <Route path="/" element={<Home />} />{" "}
           <Route path="/about" element={<About />} />
           <Route path="/lodging/:id" element={<LodgingSheet />} />
           <Route path="*" element={<Error />} />
