@@ -1,5 +1,4 @@
-import "../styles/lodgingCards.css";
-import { lodgingList } from "../datas/lodgingList";
+import { lodgingList } from "../../datas/lodgingList";
 import { Link } from "react-router-dom";
 
 export default function LodgingCards() {

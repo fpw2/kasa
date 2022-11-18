@@ -1,5 +1,3 @@
-import "../styles/banner.css";
-
 export default function Banner({ background, text }) {
   return (
     <div className={`banner-${background}`}>

@@ -1,7 +1,6 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/header.css";
-import Logo from "./Logo";
+import Logo from "../utils/Logo";
 
 export default function Header() {
   let activeStyle = {

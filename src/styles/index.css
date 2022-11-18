@@ -1,3 +1,16 @@
+@import "./about.css";
+@import "./banner.css";
+@import "./collapse.css";
+@import "./container.css";
+@import "./error.css";
+@import "./footer.css";
+@import "./header.css";
+@import "./home.css";
+@import "./index.css";
+@import "./lodgingCards.css";
+@import "./lodgingSheet.css";
+@import "./logo.css";
+
 * {
     box-sizing: border-box;
     margin: 0;

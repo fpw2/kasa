@@ -1,7 +1,7 @@
 import "../styles/about.css";
-import Banner from "../components/Banner";
+import Banner from "../components/utils/Banner";
 import { aboutList } from "../datas/aboutList.js";
-import Collapse from "../components/Collapse";
+import Collapse from "../components/utils/Collapse";
 
 export default function About() {
   return (

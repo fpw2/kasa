@@ -2,12 +2,12 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import "@fontsource/montserrat";
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./layout/Header";
+import Footer from "./layout/Footer";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Error from "../pages/Error";
-import Container from "./Container";
+import Container from "./layout/Container";
 import LodgingSheet from "../pages/LodgingSheet";
 
 export default function App() {
