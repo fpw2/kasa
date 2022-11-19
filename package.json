@@ -1,8 +1,7 @@
 {
   "name": "kasa",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
-  "homepage": "https://fpw2.github.io/kasa/",
   "dependencies": {
     "-": "^0.0.1",
     "@fontsource/montserrat": "^4.5.11",
@@ -26,9 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
